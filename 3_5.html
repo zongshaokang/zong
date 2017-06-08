@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/3_5.css"/>
+    <script type="text/javascript">
+    	
+   		  (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                  var clientWidth = docEl.clientWidth;
+                  if (!clientWidth) return;
+                  docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+   		
+    </script>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<a href="#"><img src="img/3_5img/back.png"/></a>
+			<h3>我的资料</h3>
+		</div>
+		
+		
+		
+		<div class="section">
+			<div class="photo">
+				<h4>头像</h4><a href="#"><img src="img/3_5img/photo.png"/></a>
+			</div>
+			<div class="p1">
+				<p>昵称</p><a href="#">昵称</a>
+			</div>
+			
+			<div class="p1">
+				<p>性别</p><a href="#">女</a>
+			</div>
+			
+			<div class="p1">
+				<p>生日</p><a href="#">生日</a>
+			</div>
+			
+			<div class="p1">
+				<p>地区</p><span>直辖市</span><a href="#" style="margin-left: 0.5rem;">北京</a>
+			</div>
+			
+			<div class="p1">
+				<p>个性签名</p><a href="#">疯狂摇大奖</a>
+			</div>
+			
+			<div class="p1" style="border-bottom: none;">
+				<p><a href="3_6_1.html">更改手机号</a></p><h6><img src="img/3_5img/back2.png"/></h6>
+			</div>
+		</div>
+		
+		<div class="footer"></div>
+	</div>
+</body>
+</html>

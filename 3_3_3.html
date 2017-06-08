@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/3_5.css"/>
+    <script type="text/javascript">
+    	
+   		  (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                  var clientWidth = docEl.clientWidth;
+                  if (!clientWidth) return;
+                  docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+   		
+    </script>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<a href="#"><img src="img/3_5img/back.png"/></a>
+			<h3 style="margin-left: 1.57rem;">&nbsp;&nbsp;&nbsp;&nbsp;设置密码</h3>
+		</div>
+		
+		
+		
+		<div class="section333">
+			<p>请设置转转密码你可以用传传绑定的<a href="#" style="color: #333333;">账号+传传密码</a>登录，比如使用<a href="#" style="color: #</a>;">手机号+串串密码</a>登录.</p>
+			
+			<form>
+				传传账号<input type="text"  placeholder="WE18612521"/>
+			</form>
+			<h3>密码<input type="text" value="请填写新密码" /></h3>
+			
+			<h4>确认密码<input type="text" value="请再次填写确认" /></h4>
+		</div>
+		
+		
+		
+		<div class="footer333">
+			<h3><a href="3_3_4.html">确定</a></h3>
+		</div>
+	</div>
+</body>
+</html>
